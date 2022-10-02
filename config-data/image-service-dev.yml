@@ -1,6 +1,10 @@
 server:
-  port: 8090
+  port: 8091
 
 spring:
   application:
     name: image-service
+
+  data:
+    mongodb:
+      uri: mongodb+srv://Dalmope:0b1lP72uy4APkMqq@cluster0.5evuc.mongodb.net/test

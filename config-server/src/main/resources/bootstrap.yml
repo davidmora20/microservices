@@ -6,15 +6,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/cavanosa/microservices-tutorial
+          uri: https://github.com/davidmora20/microservices.git
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+          default-label: main
           search-paths: config-data
-          username: {GIT_USERNAME}
-          password: {GIT_PASSWORD}
 
   security:
     user:
       name: root
       password: s3cr3t
-
-  application:
-    name: config-service

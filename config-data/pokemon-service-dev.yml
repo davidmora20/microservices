@@ -1,6 +1,16 @@
 server:
-  port: 8095
+  port: 8090
 
 spring:
-  application:
-    name: pokemon_service
+  datasource:
+    url: jdbc:mysql://localhost/pokedex
+    username: pokedex
+    password: pokedex
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  data:
+    mongodb:
+      uri: mongodb+srv://Dalmope:0b1lP72uy4APkMqq@cluster0.5evuc.mongodb.net/test

@@ -1,12 +1,12 @@
+server:
+  port: 8081
 spring:
-  application:
-    name: config-server
-
   cloud:
     config:
-      uri: http://localhost:9000
-      password: password
-      username: password
-
-server:
-  port: 9001
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/cavanosa/microservices-tutorial
+          search-paths: config-data
+  application:
+    name: config-service

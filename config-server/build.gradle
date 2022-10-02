@@ -17,11 +17,11 @@ ext {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.cloud:spring-cloud-config-server'
-	implementation 'org.springframework.cloud:spring-cloud-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
+	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.3'
+	implementation 'org.springframework.cloud:spring-cloud-config-server:3.1.4'
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.4'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.3'
+	testImplementation 'org.springframework.security:spring-security-test:5.7.3'
 }
 
 dependencyManagement {

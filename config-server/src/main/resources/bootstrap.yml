@@ -1,12 +1,20 @@
 server:
   port: 8081
+
 spring:
   cloud:
     config:
       server:
         git:
-          default-label: config-server
           uri: https://github.com/cavanosa/microservices-tutorial
           search-paths: config-data
+          username: {GIT_USERNAME}
+          password: {GIT_PASSWORD}
+
+  security:
+    user:
+      name: root
+      password: s3cr3t
+
   application:
     name: config-service

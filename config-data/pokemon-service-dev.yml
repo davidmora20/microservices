@@ -1,0 +1,5 @@
+server:
+  port: 8095
+
+  application:
+    name: pokemon_service

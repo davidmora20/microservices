@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: image-service
+
+spring:
+  cloud:
+    config:
+      profile: dev

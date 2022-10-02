@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      uri: http://localhost:9000
+      password: password
+      username: password
+
+server:
+  port: 9001

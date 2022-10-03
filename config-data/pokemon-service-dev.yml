@@ -14,3 +14,8 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://Dalmope:0b1lP72uy4APkMqq@cluster0.5evuc.mongodb.net/test
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8099/eureka
